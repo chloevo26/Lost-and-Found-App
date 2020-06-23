@@ -1,0 +1,158 @@
+body {
+  box-sizing: border-box;
+  background-color: #feebb1;
+  display: flex;
+  flex-direction: column;
+  color: #142a50;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 3;
+  width: 80%;
+}
+
+#logo {
+  margin: 2% 10%;
+  align-self: flex-end;
+}
+img {
+  width: 300px;
+}
+
+#found-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 3% 7%;
+}
+
+#title-input,
+#category-input,
+#image-input,
+#date-time-input,
+#location-input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#found-box > p {
+  margin-bottom: 20px;
+}
+
+#title-input > p,
+#category-input > p,
+#image-input > p,
+#location-input > p,
+#date-time-input > p {
+  margin: 10px 0;
+}
+
+div#map {
+height: 70vh;
+margin-bottom: 20px;
+}
+
+#map {
+height: 100%;
+}
+
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+}
+
+
+#title-input > input,
+#location-input > input,
+#category-input > input {
+  background-color: #e5e5e5;
+  padding: 5px;
+}
+
+
+button {
+  width: 105px;
+  height: 45px;
+  align-self: flex-end;
+  background-color: #daab27;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+}
+#another-search {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 35px 0;
+}
+#another-search > p {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 3;
+}
+
+#another-search > input {
+  padding: 8px;
+  background-image: url("https://cdn.glitch.com/6999fe10-c133-4470-b480-780aa9de72f8%2Fsearch-solid.svg?v=1590555059854");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 99%;
+  padding-right: 40px;
+}
+
+#inputs {
+  display: inline-flex;
+}
+
+@media (max-width: 1000px){
+  #logo >img{
+    width: 280px;
+  }
+}
+@media (max-width: 768px){
+  main > p, #another-search>p{
+    font-size: 23px;
+  }
+  #another-search>input{
+    background-size: 20px;
+    padding: 5px 20px 5px 5px;
+  }
+}
+
+@media (max-width: 600px){
+  #logo >img{
+    width: 250px;
+  }
+  #submit-btn{
+    width:90px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  #found-box{
+    padding: 2% 5%;
+  }
+  main{
+    width: 90%;
+  }
+  #logo{
+    margin-right: 5%;
+  }
+  #another-search{
+    width: 90%;
+  }
+}

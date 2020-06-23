@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Screen 3</title>
+    <link rel="stylesheet" href="./css/screen3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+
+  <body>
+    <div id="logo">
+      <img
+        src="https://cdn.glitch.com/6999fe10-c133-4470-b480-780aa9de72f8%2FLogo.png?v=1590555056630"
+        alt=""
+      />
+      <a href="/"></a>
+    </div>
+    <main>
+      <p>Input the found item</p>
+      <div id="found-box">
+        <div id="title-input">
+          <!-- <label for="">Title</label> -->
+          <p>Title</p>
+          <input type="text" name="" id="title" />
+        </div>
+        <div id="category-input">
+          <p>Category</p>
+          <!-- <label for="">Category</label> -->
+          <input type="text" list="choices" id="category" />
+          <datalist id="choices">
+            <option value="Electronics"> </option>
+            <option value="School Supplies & Textbooks"> </option>
+            <option value="Health & Beauty"> </option>
+            <option value="Pets"> </option>
+            <option value="Sporting Goods"> </option>
+            <option value="Others"> </option>
+          </datalist>
+        </div>
+        <div id="description-input">
+          <p>Description</p>
+          <!-- <label for="">Description</label> -->
+          <textarea name="" id="description" rows="13" cols="50"></textarea>
+        </div>
+        <div id="image-input">
+          <!-- <label for="">Attach a photo (optional)</label> -->
+          <p>Attach a photo (optional)</p>
+          <input
+            type="file"
+            id="imgUpload"
+            accept="image/png, .jpeg, .jpg, image/gif"
+            name="lostImage"
+          />
+        </div>
+        <button id="next-btn">Next</button>
+      </div>
+    </main>
+    <section id="another-search">
+      <p>Or search for existing requests</p>
+      <input type="text" name="" id="search" />
+    </section>
+    <script src="./js/screen3.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,105 @@
+body {
+  background-color: #b3c1d1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 5%;
+  justify-content: space-between;
+}
+#seekerPrompt,
+#finderPrompt {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 25px;
+  color: #142a50;
+  line-height: 3;
+}
+
+#logo {
+  margin: 2% 5%;
+}
+img {
+  width: 300px;
+  float: right;
+}
+
+button {
+  font-size: 25px;
+  padding: 15px 45px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+}
+
+.finder-btn {
+  background-color: #daab27;
+  color: white;
+}
+
+.seeker-btn {
+  background-color: #142a50;
+  color: white;
+}
+
+@media(max-width:1000px){
+  #finderPrompt, #seekerPrompt{
+    /* width: 80%; */
+    font-size: 22px;
+    margin: 0 10px;
+  }
+  #logo >img{
+    width: 260px;
+  }
+  #logo{
+    margin-right: 3%;
+  }
+  button{
+    padding: 15px 28px;
+    font-size: 22px;
+  }
+  main{
+    margin: 3%;
+  }
+}
+
+@media(max-width:768px){
+  #finderPrompt, #seekerPrompt{
+    font-size: 20px;
+  }
+  #logo >img{
+    width: 250px;
+  }
+  main{
+    margin: 3%;
+  }
+}
+
+@media(max-width:600px){
+  #finderPrompt, #seekerPrompt{
+    font-size: 22px;
+    margin: 20px 0;
+  }
+  
+  main{
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  #logo{
+    margin-right: 8%;
+  }
+  button{
+    padding: 15px 40px;
+    font-size: 23px;  
+    border-radius: 10px;
+
+  }
+  #logo >img{
+    width: 220px;
+  }
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Screen 4</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="./css/screen4.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+
+  <body>
+    <div id="logo">
+      <img
+        src="https://cdn.glitch.com/6999fe10-c133-4470-b480-780aa9de72f8%2FLogo.png?v=1590555056630"
+        alt=""
+      />
+    </div>
+    <main>
+      <p>Input the found item</p>
+      <div id="found-box">
+        <div id="date-time-input">
+          <!-- <label for="">Title</label> -->
+          <p>Date & Time</p>
+          <div id="inputs">
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              min="2018-01-01"
+              max="2022-12-31"
+            />
+            <input
+              type="time"
+              id="appt"
+              name="appt"
+              min="00:00"
+              max="24:00"
+              required
+            />
+          </div>
+        </div>
+        <div id="location-input">
+          <p>Location</p>
+          <!-- <label for="">Category</label> -->
+          <input
+            type="text"
+            id="search-input"
+            onkeypress="if(event.keyCode === 13)search();"
+          />
+        </div>
+        <div id="map"></div>
+        <button id="submit-btn">Submit</button>
+      </div>
+    </main>
+    <section id="another-search">
+      <p>Or search for existing requests</p>
+      <input type="text" name="" id="search" />
+    </section>
+    <script src="./js/screen4.js"></script>
+  </body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApU7QqFx2zJGCQ-6cc-LCZXw6K4os93mo&callback=initMap&libraries=places&v=weekly"
+    defer
+  ></script>
+</html>
+
